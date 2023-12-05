@@ -13,7 +13,7 @@ class Node:
         self.right = None
         self.parent = None
 
-class RBtree:
+class RWtree:
     def __init__(self, val):
         self.root = Node(val)
         self.root.color = white
@@ -129,7 +129,7 @@ def visualize_tree(node, graph=None):
     return graph
 
 # Example usage:
-root = RBtree(1)
+root = RWtree(1)
 
 root.insert(437)
 root.insert(244)
